@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="script.js"></script>
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <div class="card">
+      <span class="circle-transparent-shape lrota-"><img class="star-img" src="/images/icon-star.svg" alt="star*"></span>
+      <h1 class="title color-white overPass">How did we do?</h1>
+      <p class="CAparagraph color-white-transparent overPass">Please let us know how we did with your support request. All feedback is appreciated 
+        to help us improve our offering!</p>
+      <nav>
+        <span class="circle-transparent-shape padding-bigger one" onclick="ratecircleClick('one')"><a class="eins color-white-transparent overPass">1</a></span>
+        <span class="circle-transparent-shape padding-bigger two" onclick="ratecircleClick('two')"><a class="zwei color-white-transparent overPass">2</a></span>
+        <span class="circle-transparent-shape padding-bigger three" onclick="ratecircleClick('three')"><a class="drei color-white-transparent overPass">3</a></span>
+        <span class="circle-transparent-shape padding-bigger four" onclick="ratecircleClick('four')"><a class="vier color-white-transparent overPass">4</a></span>
+        <span class="circle-transparent-shape padding-bigger five" onclick="ratecircleClick('five')"><a class="funf color-white-transparent overPass">5</a></span>
+      </nav>
+      <button class="submitButton color-white overPass" onclick="OnSubmitButtonClicked()">Submit</button>
+    </div>
+
+    <div class="card2 thankyou disappeared">
+      <span class="how"><img src="/images/illustration-thank-you.svg" class="imagethanks" alt="illustration"></span>
+      <span class="how"><h3 class="rateText color-orange overPass">You selected 4 out of 5</h1></span>
+      <h1 class="title1 color-white overPass">Thank you!</h1>
+      <p class="CAparagraph align-center color-white-transparent overPass">
+        We appreciate you taking the time to give a rating. If you ever need more support, 
+        don’t hesitate to get in touch!
+      </p>
+    </div>
+</body>
+</html>

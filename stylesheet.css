@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+*{
+    box-sizing: content-box;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+.color-orange{color: hsl(25, 97%, 53%);}
+.color-white{color: white;}
+.overPass{font-family: 'Overpass', sans-serif;}
+.color-white-transparent{color: rgb(255, 255, 255, .5);}
+.disappeared{display: none;}
+
+body{background: #141519; background-attachment: fixed;}
+.card,.card2{
+    max-width: 350px;
+    max-height: 350px;
+    padding: 40px;
+    background: rgb(23,30,40);
+    border-radius: 5%;
+    background: linear-gradient(328deg, rgba(23,30,40,1) 0%, rgba(34,40,48,1) 100%);
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    transition: .2s;
+}
+@keyframes myopacityanim{
+    0%{opacity: 0%;}
+    100%{opacity: 100%;}
+}
+.transparent{opacity: 0%;}
+.fullop{opacity: 100%;}
+.opacityAnimation{
+    animation: myopacityanim .4s;
+}
+.circle-transparent-shape{width: 17px; height: 17px;padding: 13px; display: flex; justify-content: center; border-radius: 100%; background-color: rgba(255, 255, 255, 0.05); margin: -10px 0px 40px 0px; transition: .2s;}
+.lrota-{margin-left: 2px;}
+.CAparagraph{
+    font-size: 15px;
+    line-height: 170%;
+    margin: 10px 0px;
+}
+
+.title{
+    margin: 0px 0px;
+}
+.title1{text-align: center;}
+.align-center{text-align: center;}
+.padding-bigger{
+    padding: 20px;
+}
+
+nav{display: flex; flex-direction: row; justify-content: space-between; margin-top: 30px;}
+nav span{
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.submitButton{
+    width: 100%;
+    height: 50px;
+    margin: auto;
+    border-radius: 25px;
+    background-color: hsl(25, 97%, 53%);
+    border: 0;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: -10px;
+    transition: .25s all;
+}
+
+.submitButton:hover{
+    cursor: pointer;
+    color: hsl(25, 97%, 53%);
+    background-color: white;
+}
+
+nav span:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.15);
+}
+.rateText{
+    font-size: 1em;
+    text-align: center;
+    font-weight: normal;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 10px 25px;
+    border-radius: 20px;
+}
+@keyframes illustrationMovement {
+    0%{margin-top: 0px;}
+    50%{margin-top: -10px;}
+    100%{margin-top: 0px;}
+}
+
+.how{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px;
+    margin-bottom: 30px;
+}
+
+.anim{
+    animation: illustrationMovement 2s;
+    animation-iteration-count: infinite;
+}
+
+
+@media only screen and (min-width: 280px) and (max-width: 425px)  /*Mobiles*/
+{
+    .card2{width: 70%; max-height: 50%;}
+    .card{padding-bottom: 70px; width: 70%; max-height: 50%;}
+}
